@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="校园足球联赛 V0.2：赛程、积分、球队和球员榜单。本地演示网站。">
+  <meta name="description" content="校园足球联赛 V0.3：赛程、积分、球队和球员榜单。本地演示网站。">
   <title>校园足球联赛 · 2026 赛季</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="store.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -14,8 +16,9 @@
     <nav aria-label="主导航"><a href="#home">首页</a><a href="#fixtures">赛程</a><a href="#standings">积分榜</a><a href="#teams">球队</a><a href="#players">球员榜单</a></nav>
     <span class="season">2026 赛季</span>
   </div></header>
+  <p id="data-status" class="data-status" role="status">正在载入赛事数据…</p>
   <main id="app"></main>
-  <footer><div><strong>校园足球联赛</strong><span>让每一份热爱，都在球场上被看见。</span></div><p>V0.2 本地重制版 · 全部球队、球员、赛程及比赛事件均为演示数据<br>个人开发演示项目 · 非学校官方网站</p></footer>
+  <footer><div><strong>校园足球联赛</strong><span>让每一份热爱，都在球场上被看见。</span></div><p><span id="footer-version">V0.3</span> · <a class="link" href="admin.html">管理员入口</a><br>个人开发演示项目 · 非学校官方网站</p></footer>
   <dialog id="detail"><button id="close-dialog" class="close" aria-label="关闭详情">×</button><div id="detail-content"></div></dialog>
   <noscript>请在浏览器中启用 JavaScript，以查看赛程、积分和球员榜单。</noscript>
 </body>
